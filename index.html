@@ -21,41 +21,108 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- ANIMACION SCROLL -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
+
 <body>
     <div id="index"></div>
     <header>
         <!-- MENU START -->
-        <div class="navLogo" >
-            <img src="style/images/logo-light@2x.png" alt="" class="logoHeader">
-        </div>
-        <nav class="container">
-            <div class="navMenu">
-                <ul class="ulWrap">
-                    <li>
-                        <a href="#index">Inicio</a>
+        <!-- BOOTSTRAP MENU START -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="style/images/logo-light.png" alt="" class="logoHeader"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <div class="collapse navbar-collapse" id="navbarText"> -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#index">Inicio</a>
                     </li>
-                    <li>
-                        <a href="#galeria">Galería</a>
-                        <!-- <ul class="subMenu">
-                            <li><a href="galeria.html">Bodas</a></li>
-                            <li><a href="galeria.html">Verano</a></li>
-                            <li><a href="galeria.html">Estudio</a></li>
-                            <li><a href="galeria.html">Noche</a></li>
-                        </ul> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria">Galería</a>
                     </li>
-                    <li>
-                        <a href="#nosotros">Nosotros</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
                     </li>
-                    <li>
-                        <a href="#servicios">Servicios</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
                     </li>
-                    <li>
-                        <a href="#gridContactos">Contacto</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gridContactos">Contacto</a>
                     </li>
-                </ul>
+                    
+              <span>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link social" href="https://vimeo.com/user43273357" target="_blank"><i
+                                class="fab fa-vimeo "></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link social" href="https://www.instagram.com/memories.photo.stories/"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>              </span>
             </div>
-        </nav>
+          </nav>
+        <!-- <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="style/images/logo-light.png" alt="" class="logoHeader"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#index">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gridContactos">Contacto</a>
+                        </li>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link social" href="https://vimeo.com/user43273357" target="_blank"><i
+                                        class="fab fa-vimeo "></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link social" href="https://www.instagram.com/memories.photo.stories/"
+                                    target="_blank"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                        <div class="collapse navbar-collapse" id="navbarText">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                            </ul>
+                            <span class="navbar-text">
+                                Navbar text with an inline element
+                            </span>
+                        </div>
+                </div>
+            </nav> -->
+        </div>
         <!-- MENU END -->
     </header>
     <!-- MAIN START -->
@@ -63,7 +130,9 @@
         <div class="grid">
             <!-- SLIDER START -->
             <div id="slider">
-                <h2 id="tituloSlider" class="animate__animated animate__fadeInUp">Video profesional</h2>
+
+                <!-- <h2 id="tituloSlider" class="animate__animated animate__fadeInUp">Video profesional</h2> -->
+
                 <!-- VIDEO SLIDER -->
                 <video src="style/video/slider.mp4" autoplay loop muted id="videoSlider">
                 </video>
@@ -71,34 +140,44 @@
             <!--GALLERIA START -->
             <div class="containerTitulo" id="galeriaTitulo" data-aos="fade-up" data-aos-duration="1000"
                 data-aos-delay="100">
-                <h1>Genuino</h1>
-                <h2>Realización y Producción</h2>
+                <h1 class="titulosH2">Genuino</h1>
+                <h2 class="titulosH1">Realización y Producción</h2>
             </div>
             <!-- GALERIA -->
-            <div id="familia" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <div id="video1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <!-- VIDEO LOAD TEST -->
                 <div>
-                    
-             
-                <!-- <p><a href="https://vimeo.com/695562779">Reel 2022 - Tadeo Reyes</a> from <a
+                    <!-- <p><a href="https://vimeo.com/695562779">Reel 2022 - Tadeo Reyes</a> from <a
                         href="https://vimeo.com/user43273357">Tadeo Reyes</a> on <a href="https://vimeo.com">Vimeo</a>.
                 </p> -->
-                <h3 class="galeriaTitulos">REEL 2022</h3>
-                <img class="galeria blend" src="style/images/gallery/reelShot.png" alt="">
-            </div>
-<!-- 
+                    <h3 class="galeriaTitulos">REEL 2022</h3>
+                    <img class="galeria blend" src="style/images/gallery/reelShot.png" alt="">
+                </div>
+                <!-- 
                 <a href="galeria.html" class="link">
                     <h3 class="galeriaTitulos">Familia</h3>
                     <img class="galeria blend" src="style/images/gallery/reelShot.png" alt="">
                 </a> -->
             </div>
-            <div id="bodas" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                <iframe title="vimeo-player" src="https://player.vimeo.com/video/695559466?h=1db3abfad8" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            <div id="video2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+
+                <div>
+                    <h3 class="galeriaTitulos">REEL 2022</h3>
+                    <!-- <img class="galeria blend" src="style/images/gallery/reelShot.png" alt=""> -->
+
+                    <iframe class="galeria blend"
+                        src="https://player.vimeo.com/video/684956968?h=2fcf64abdb&title=0&byline=0&portrait=0"
+                        width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
             </div>
-            <div id="estudio" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                <iframe title="vimeo-player" src="https://player.vimeo.com/video/684956968?h=2fcf64abdb" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-            </div>
-<!--             
+            <div id="video3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <iframe src="https://player.vimeo.com/video/662731006?h=3a58fbe36e&title=0&byline=0&portrait=0"
+                    width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen></iframe> </div>
+
+            <!--             
+
             <div id="nosotros" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <a href="nosotros.html" class="link">
                     <h3 class="galeriaTitulos">Nosotros</h3>
@@ -121,7 +200,7 @@
 
         <!-- CONTACTO -->
         <div id="gridContactos">
-            <div class="containerTitulo" id="tituloContactos" data-aos="fade-up" data-aos-duration="1000"
+            <div class="containerTitulo tituloContactos" data-aos="fade-up" data-aos-duration="1000"
                 data-aos-delay="100">
                 <h1>Contacto</h1>
                 <h2>Mantenete cerca</h2>
@@ -210,9 +289,16 @@
             <div class="footerFlex">
                 <p class="footerTitulos">contacto</p>
                 <ul class="footerContent">
-                    <li> <i class="fas fa-map-marker-alt"></i> Argentina, Buenos Aires</li>
-                    <li> <i class="fas fa-phone-alt"></i> 11 6365 4353</li>
-                    <li> <i class="fas fa-at"></i> tadeoreyes@trfilmmaker.com.ar</li>
+                    <li> <i class="fas fa-map-marker-alt">
+                            <p>Argentina, Buenos Aires</p>
+                        </i>
+                    </li>
+                    <li> <i class="fas fa-phone-alt">
+                            <p> 11 6365 4353</p>
+                        </i> </li>
+                    <li> <i class="fas fa-at">
+                            <p> tadeoreyes@trfilmmaker.com.ar</p>
+                        </i> </li>
                     <i class="fas fa-solid fa-location-pin"></i>
 
                 </ul>
@@ -221,7 +307,7 @@
 
         <!-- LOGO FOOTER DEL SITIO -->
         <!-- <div class="footerLogoContainer"> -->
-        <div class="footerLogoContainer">
+        <div class="footerLogoContainer footerContent">
             <img src="style/images/logo-light@2x.png" alt="" class="footerLogo ">
         </div>
         <div>
@@ -236,6 +322,12 @@
     <script>
         AOS.init();
     </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
 </body>
 
 </html>

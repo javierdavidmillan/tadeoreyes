@@ -4,14 +4,24 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* ////////VERIFU\ICAR ESTO ////////////////// */
+  #gridContactos{
+  scroll-margin-block-start: 110px;
+  
+  scroll-margin-block-end: 110pxx;
+}
+
 
 /* /////////////// HEADER /////////////// */
 
 header {
-    background-color: #1B1A1A;
+    background-color: #F8F9FA;
     position: sticky;
     top: 0px;
-    padding: 20px;
     padding-left: 150px;
     padding-right: 150px;
     z-index: 2000;
@@ -27,8 +37,9 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 .logoHeader {
-    width: 150px;
+    width: 40px;
     padding-bottom: 10px;
 
 }
@@ -46,11 +57,18 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+.nav {
+    z-index: 1000;
+}
 
+.navbar{
+    padding: 0 !important;
+}
 .navMenu {
     display: flex;
     flex-basis: auto;
     align-items: center;
+    color: white;
 }
 
 .navMenu ul {
@@ -80,15 +98,19 @@ header {
 
 }
 
-.subMenu {
-    position: absolute;
-    background-color: #151515;
-    margin-top: 10px;
+/* REVISAR ESTO SI SIRVE? */
+nav ul li {
+    list-style: none;
 }
 
-.subMenu li {
-    padding-top: 10px;
-    padding-bottom: 10px;
+nav ul li a {
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* /////////////// SLIDER ///////////////*/
@@ -97,9 +119,10 @@ header {
     display: flex;
     align-items: center;
     grid-area: area1;
-    height: 500px;
+    height: 600px;
     overflow: hidden;
     justify-content: center;
+    z-index: 10;
 }
 
 
@@ -120,13 +143,73 @@ header {
 
 /* /////////////// MAIN /////////////// */
 
+/* 
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+main {
+    text-align: center;
+}
+
+.titulosH2 {
+    color: #FFBD59;
+    font-family: 'Helvetica', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.titulosH1 {
+    margin-top: 0;
+    color: #404040;
+    font-family: 'Helvetica', Arial, sans-serif;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #404040;
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+h4 {
+    color: #404040;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+p {
+    color: #555555;
+}
+
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "area1 area1 area1"
         "area2 area2 area2"
         "area3 area4 area5"
-        "area6 area7 area8";
+        "area6 area7 area8"
+    ;
 }
 
 .containerTitulo {
@@ -152,116 +235,33 @@ header {
 }
 
 
-#bodas {
+#video1 {
+    grid-area: area3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+#video2 {
     grid-area: area4;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 400px;
+    max-height: 300px;
     overflow: hidden;
 }
 
-#estudio {
+#video3 {
     grid-area: area5;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 400px;
+    max-height: 300px;
     overflow: hidden;
 }
 
-#nosotros {
-    grid-area: area6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#servicios {
-    grid-area: area7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#contactos {
-    grid-area: area8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-nav ul li {
-    list-style: none;
-}
-
-nav ul li a {
-    font-family: 'Helvetica', Arial, sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-main {
-    text-align: center;
-}
-
-
-h1 {
-    color: #FFBD59;
-    font-family: 'Helvetica', Arial, sans-serif;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-}
-
-h2 {
-    margin-top: 0;
-    color: #404040;
-    font-family: 'Helvetica', Arial, sans-serif;
-    letter-spacing: -0.5px;
-    margin-bottom: 10px;
-    font-size: 32px;
-    line-height: 44px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-h3 {
-    color: #404040;
-    font-family: 'Muli', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-}
-
-h4 {
-    color: #404040;
-    font-family: 'Montserrat';
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 700;
-}
-
-p {
-    color: #555555;
-}
-
-
-a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
 
 /* /////////////////// FOOTER /////////////////// */
 
@@ -273,12 +273,13 @@ a {
     justify-content: center;
     align-items: center;
 }
+
 .footerLogo {
     width: 90px;
 }
 
 .footerTitulos {
-    font-family: 'roboto';
+    font-family: 'Helvetica', Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -308,18 +309,38 @@ footer {
 
 .footerContent {
     color: rgb(255, 255, 255);
-    font-family: 'Muli', sans-serif;
+    font-family: 'Helvetica', Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
     text-align: left;
     list-style: none;
     padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContent i {
+    /* padding: 10px; */
+    display: flex;
+    
+}
+.footerContent li {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.footerContent p {
+    padding-left: 10px;
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 /* /////////// GALERIA //////////// */
 
 .blend {
-    opacity: 75%;
+    opacity: 100%;
     transition: all 700ms;
 }
 
@@ -412,6 +433,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
+    max-height: 300px;
 }
 
 #servicioBodas {
@@ -420,6 +442,8 @@ footer {
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
+    max-height: 300px%;
+
 }
 
 #servicioEstudio {
@@ -428,11 +452,16 @@ footer {
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
+    max-height: 300px%;
+
 }
 
 
 
 /* //////////// CONTACTO //////////// */
+.contacto p {
+    font-family: 'Helvetica', Arial, sans-serif;
+}
 
 #gridContactos {
     max-width: 900px;
@@ -446,8 +475,9 @@ footer {
         "area3 area3 area3";
 }
 
-#tituloContactos {
+.tituloContactos {
     grid-area: area1;
+    display: space-around;
 }
 
 #containerContacto {
@@ -458,6 +488,17 @@ footer {
 
 #formulario {
     grid-area: area3;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.h3Contacto {
+    color: #404040;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
 }
 
 input {
@@ -468,6 +509,7 @@ input {
     border: 1px solid #ccc;
     /* border-radius: 4px; */
     box-sizing: border-box;
+    font-family: 'Helvetica', Arial, sans-serif;
 }
 
 input[type=submit] {
@@ -478,6 +520,7 @@ input[type=submit] {
     margin: 8px 0;
     border: none;
     cursor: pointer;
+    font-family: 'Helvetica', Arial, sans-serif;
 }
 
 input[type=submit]:hover {
@@ -486,16 +529,9 @@ input[type=submit]:hover {
 
 textarea {
     width: 100%;
-    height: 40px;
+    height: 80px;
     color: white;
-}
-
-.h3Contacto {
-    color: #404040;
-    font-family: 'roboto';
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 700;
+    font-family: 'Helvetica', Arial, sans-serif;
 }
 
 fieldset {
@@ -552,15 +588,15 @@ fieldset {
 
     /* //////////// MENU ///////////////*/
 
-    header {
+    /* header {
         background-color: #151515;
         position: sticky;
         z-index: 2000;
-    }
+    } */
 
-    #logoHeader {
+    /* #logoHeader {
         width: 180px;
-    }
+    } */
 
     #container {
         display: flex;
@@ -620,13 +656,17 @@ fieldset {
     }
 
     .footerTitulos {
-        font-family: 'roboto';
+        font-family: 'Helvetica', Arial, sans-serif;
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         color: rgb(255, 255, 255);
         text-decoration: none;
         letter-spacing: normal;
+    }
+    .footerTitulos ul li {
+        font-family: 'Helvetica', Arial, sans-serif;
+
     }
 
     #footerContainer {
@@ -649,12 +689,16 @@ fieldset {
     }
 
     .footerContent {
+        font-family: 'Helvetica', Arial, sans-serif;
         color: rgb(255, 255, 255);
-        font-family: 'Muli', sans-serif;
-        font-size: 14px;
+        font-size: 34px;
         font-weight: 400;
         text-align: left;
         list-style: none;
+    }
+    .footerContent li{
+        font-family: 'Helvetica', Arial, sans-serif;
+
     }
 
     /* ///////////// MAIN ///////////// */
@@ -767,37 +811,6 @@ fieldset {
         justify-content: center;
         align-items: center;
     }
-
-    /* ////////////////// SERVICIOS //////////////// */
-
-    #servicioFamilias {
-        grid-area: area2;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 20px;
-    }
-
-    #servicioBodas {
-        grid-area: area3;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 20px;
-    }
-
-    #servicioEstudio {
-        grid-area: area4;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 20px;
-    }
-
-}
 
 /* /////////////// TABLET START /////////////// */
 
@@ -933,7 +946,7 @@ fieldset {
         align-items: center;
         justify-content: center;
         padding-bottom: 20px;
-}
+    }
 
     #servicioBodas {
         grid-area: area3;
@@ -1050,7 +1063,7 @@ fieldset {
         background-color: black;
     }
 
-    
+
     /* //////////// NOSOTROS ///////////// */
     .gridNosotros {
         max-width: 900px;
