@@ -3,17 +3,22 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: #F8F9FA;
+
 }
+
 html {
     scroll-behavior: smooth;
-  }
-  
-  /* ////////VERIFU\ICAR ESTO ////////////////// */
-  #gridContactos{
-  scroll-margin-block-start: 110px;
-  
-  scroll-margin-block-end: 110pxx;
 }
+
+ body{
+    background-color: #F8F9FA;
+ }
+/* ////////VERIFU\ICAR ESTO ////////////////// */
+/* #gridContactos {
+    scroll-margin-block-start: 110px;
+    scroll-margin-block-end: 110pxx;
+} */
 
 
 /* /////////////// HEADER /////////////// */
@@ -22,8 +27,8 @@ header {
     background-color: #F8F9FA;
     position: sticky;
     top: 0px;
-    padding-left: 150px;
-    padding-right: 150px;
+    /* padding-left: 150px; */
+    /* padding-right: 150px; */
     z-index: 2000;
 }
 
@@ -39,8 +44,14 @@ header {
 }
 
 .logoHeader {
-    width: 40px;
-    padding-bottom: 10px;
+    width: 3rem;
+    /* padding-bottom: 2%; */
+    padding-left: 0;
+    padding-right: 0;
+    /* padding-top: 2%; */
+    margin: 0;
+    /* width: 40px; */
+    /* padding-bottom: 10px; */
 
 }
 
@@ -57,13 +68,15 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
 .nav {
     z-index: 1000;
 }
 
-.navbar{
+.navbar {
     padding: 0 !important;
 }
+
 .navMenu {
     display: flex;
     flex-basis: auto;
@@ -81,17 +94,17 @@ header {
     display: none;
 }
 
-.navMenu ul ul li {
+/* .navMenu ul ul li {
     display: block;
-}
+} */
 
 .navMenu a {
     transition: color 300ms;
 }
-
+/* 
 .navMenu a:hover {
-    color: #b6b5b5;
-}
+    color: #d32525 !important;
+} */
 
 .navMenu ul li:hover ul {
     display: block;
@@ -114,25 +127,32 @@ nav ul li a {
 }
 
 /* /////////////// SLIDER ///////////////*/
-
-#slider {
+.sliderDesktop{
+    /* display: block !important; */
+    visibility:visible !important;
+    opacity: 1;
+  }
+  .sliderMobile{
+    /* display: none !important; */
+    visibility: hidden !important;
+    opacity: 0;
+  }
+.slider {
     display: flex;
     align-items: center;
     grid-area: area1;
-    height: 600px;
+    height: 100%;
     overflow: hidden;
     justify-content: center;
     z-index: 10;
 }
-
-
 #videoSlider {
     max-width: 100%;
     position: relative;
 }
 
 #tituloSlider {
-    color: rgb(255, 255, 255);
+    color: #F8F9FA;
     font-family: 'Helvetica', Arial, sans-serif;
     font-size: 54px;
     text-transform: uppercase;
@@ -140,23 +160,31 @@ nav ul li a {
     position: absolute;
     z-index: 1009;
 }
+ /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+
+ @media (max-width: 575.98px) {
+    .sliderMobile{
+       display: block !important;
+      visibility: visible !important;
+      opacity: 1;
+    }
+    .sliderDesktop{
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0;
+    }
+  }
 
 /* /////////////// MAIN /////////////// */
-
-/* 
-.link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
 main {
     text-align: center;
 }
 
 .titulosH2 {
-    color: #FFBD59;
+    color: #7C7C7D;
     font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 24px;
@@ -322,8 +350,9 @@ footer {
 .footerContent i {
     /* padding: 10px; */
     display: flex;
-    
+
 }
+
 .footerContent li {
     padding-top: 2px;
     padding-bottom: 2px;
@@ -350,7 +379,7 @@ footer {
 
 /* ////////////NOSOTROS//////////// */
 
-.gridNosotros {
+#gridNosotros {
     max-width: 900px;
     width: 100%;
     margin-left: auto;
@@ -370,38 +399,37 @@ footer {
     grid-area: area2;
 }
 
-#flexNosotros {
+.flexNosotros {
     max-width: 1080px;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-
+}
+.boxNosotros {
+    padding: 5px;
+    max-width: 40%;
 }
 
 .parrafoNosotros {
     padding-left: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-family: 'Muli', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Helvetica', Arial, sans-serif;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: left;
     line-height: 24px;
     list-style: none;
+    color: #404040;
     /* width: 120%; */
 }
 
-#boxNosotros {
-    padding: 5px;
-    width: 70%;
-}
-
-#instagramTitulo {
+/* #instagramTitulo {
     grid-area: area4;
-}
+} */
 
 /* ///////////////// SERVICIOS ////////////////// */
 
@@ -442,7 +470,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
-    max-height: 300px%;
+    max-height: 300px;
 
 }
 
@@ -452,11 +480,32 @@ footer {
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
-    max-height: 300px%;
+    max-height: 300px;
 
 }
 
+.serviciosLista{
+    padding: 0;
+    text-align: left;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 24px;
+    list-style: none;
+    color: #404040;
+}
 
+.serviciosParrafo{
+
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 24px;
+    list-style: none;
+    color: #404040;
+}
 
 /* //////////// CONTACTO //////////// */
 .contacto p {
@@ -597,8 +646,8 @@ fieldset {
     /* #logoHeader {
         width: 180px;
     } */
-
-    #container {
+/* 
+    .container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -607,31 +656,31 @@ fieldset {
         width: 100%;
     }
 
-    #navMenu {
+    .navMenu {
         display: flex;
         flex-basis: auto;
         align-items: center;
     }
 
-    #navMenu ul {
+    .navMenu ul {
         display: flex;
         flex-wrap: wrap;
     }
 
-    #navMenu ul ul {
+    .navMenu ul ul {
         position: absolute;
         display: none;
     }
 
-    #navMenu ul ul li {
+    .navMenu ul ul li {
         display: block;
     }
 
-    #navMenu ul li:hover ul {
+    .navMenu ul li:hover ul {
         display: block;
     }
 
-    #subMenu {
+    .subMenu {
         position: absolute;
         background-color: #151515;
         margin-top: 10px;
@@ -640,7 +689,7 @@ fieldset {
     #subMenu li {
         padding-top: 10px;
         padding-bottom: 10px;
-    }
+    } */
 
     /* //////////// FOOTER //////////// */
 
@@ -664,6 +713,7 @@ fieldset {
         text-decoration: none;
         letter-spacing: normal;
     }
+
     .footerTitulos ul li {
         font-family: 'Helvetica', Arial, sans-serif;
 
@@ -696,7 +746,8 @@ fieldset {
         text-align: left;
         list-style: none;
     }
-    .footerContent li{
+
+    .footerContent li {
         font-family: 'Helvetica', Arial, sans-serif;
 
     }
@@ -812,318 +863,317 @@ fieldset {
         align-items: center;
     }
 
-/* /////////////// TABLET START /////////////// */
+    /* /////////////// TABLET START /////////////// */
 
-@media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 600px) {
 
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "area1 area1"
-            "area2 area2 "
-            "area3 area4"
-            "area5 area6"
-            "area7 area8";
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "area1 area1"
+                "area2 area2 "
+                "area3 area4"
+                "area5 area6"
+                "area7 area8";
+        }
+
+        #slider {
+            display: flex;
+            align-items: center;
+            grid-area: area1;
+            height: auto;
+            overflow: hidden;
+            justify-content: center;
+        }
+
+        #tituloSlider {
+            color: rgb(255, 255, 255);
+            font-family: 'roboto', sans-serif;
+            font-size: 34px;
+            text-transform: uppercase;
+            font-weight: bold;
+            position: absolute;
+            z-index: 1009;
+        }
+
+        .galeriaTitulo {
+            grid-area: area2;
+        }
+
+        #familia {
+            grid-area: area3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 250px;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        #bodas {
+            grid-area: area4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 250px;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        #estudio {
+            grid-area: area5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 250px;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        #nosotros {
+            grid-area: area6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 250px;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        #servicios {
+            grid-area: area7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 250px;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        #contactos {
+            grid-area: area8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 250px;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        /* ///////////// NOSOTROS ///////////// */
+
+        .gridNosotros {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "area1 area1 "
+                "area2 area2"
+                "area4 area4 ";
+        }
+
+        #nosotrosTitulo {
+            grid-area: area1;
+        }
+
+        #containerNosotros {
+            grid-area: area2;
+        }
+
+        #flexNosotros {
+            max-width: 900px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* ////////////// SERVICIOS TABLET///////////// */
+
+        #servicioFamilias {
+            grid-area: area2;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+
+        #servicioBodas {
+            grid-area: area3;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+
+        #servicioEstudio {
+            grid-area: area4;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
     }
 
-    #slider {
-        display: flex;
-        align-items: center;
-        grid-area: area1;
-        height: auto;
-        overflow: hidden;
-        justify-content: center;
+    /* /////////////// DESKTOP START  ///////////////*/
+
+    @media only screen and (min-width: 992px) {
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "area1 area1 area1"
+                "area2 area2 area2 "
+                "area3 area4 area5"
+                "area6 area7 area8";
+        }
+
+        #slider {
+            display: flex;
+            align-items: center;
+            grid-area: area1;
+            height: 500px;
+            overflow: hidden;
+            justify-content: center;
+        }
+
+        #tituloSlider {
+            color: rgb(255, 255, 255);
+            font-family: 'roboto', sans-serif;
+            font-size: 54px;
+            text-transform: uppercase;
+            font-weight: bold;
+            position: absolute;
+            z-index: 1009;
+        }
+
+        .galeriaTitulo {
+            grid-area: area2;
+        }
+
+        #familia {
+            grid-area: area3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 400px;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        #bodas {
+            grid-area: area4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 400px;
+            overflow: hidden;
+            /* background-image: radial-gradient(#666666, #000000); */
+            background-color: black;
+        }
+
+        #estudio {
+            grid-area: area5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 400px;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        #nosotros {
+            grid-area: area6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 400px;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        #servicios {
+            grid-area: area7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 400px;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        #contactos {
+            grid-area: area8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 400px;
+            overflow: hidden;
+            background-color: black;
+        }
+
+
+        /* //////////// NOSOTROS ///////////// */
+        .gridNosotros {
+            max-width: 900px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "area1  area1 area1"
+                "area2 area2 area2"
+                "area4 area4 area4"
+        }
+
+        #nosotrosTitulo {
+            grid-area: area1;
+        }
+
+        #containerNosotros {
+            grid-area: area2;
+        }
+
+        #flexNosotros {
+            max-width: 1080px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        /* ////////////// SERVICIOS ///////////// */
+
+        #servicioFamilias {
+            grid-area: area2;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+
+        #servicioBodas {
+            grid-area: area3;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+
+        #servicioEstudio {
+            grid-area: area4;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
     }
-
-    #tituloSlider {
-        color: rgb(255, 255, 255);
-        font-family: 'roboto', sans-serif;
-        font-size: 34px;
-        text-transform: uppercase;
-        font-weight: bold;
-        position: absolute;
-        z-index: 1009;
-    }
-
-    .galeriaTitulo {
-        grid-area: area2;
-    }
-
-    #familia {
-        grid-area: area3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-height: 250px;
-        overflow: hidden;
-        background-color: black;
-    }
-
-    #bodas {
-        grid-area: area4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-height: 250px;
-        overflow: hidden;
-        background-color: black;
-    }
-
-    #estudio {
-        grid-area: area5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-height: 250px;
-        overflow: hidden;
-        background-color: black;
-    }
-
-    #nosotros {
-        grid-area: area6;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-height: 250px;
-        overflow: hidden;
-        background-color: black;
-    }
-
-    #servicios {
-        grid-area: area7;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-height: 250px;
-        overflow: hidden;
-        background-color: black;
-    }
-
-    #contactos {
-        grid-area: area8;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-height: 250px;
-        overflow: hidden;
-        background-color: black;
-    }
-
-    /* ///////////// NOSOTROS ///////////// */
-
-    .gridNosotros {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "area1 area1 "
-            "area2 area2"
-            "area4 area4 ";
-    }
-
-    #nosotrosTitulo {
-        grid-area: area1;
-    }
-
-    #containerNosotros {
-        grid-area: area2;
-    }
-
-    #flexNosotros {
-        max-width: 900px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    /* ////////////// SERVICIOS TABLET///////////// */
-
-    #servicioFamilias {
-        grid-area: area2;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 20px;
-    }
-
-    #servicioBodas {
-        grid-area: area3;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 20px;
-    }
-
-    #servicioEstudio {
-        grid-area: area4;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 20px;
-    }
-}
-
-/* /////////////// DESKTOP START  ///////////////*/
-
-@media only screen and (min-width: 992px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "area1 area1 area1"
-            "area2 area2 area2 "
-            "area3 area4 area5"
-            "area6 area7 area8";
-    }
-
-    #slider {
-        display: flex;
-        align-items: center;
-        grid-area: area1;
-        height: 500px;
-        overflow: hidden;
-        justify-content: center;
-    }
-
-    #tituloSlider {
-        color: rgb(255, 255, 255);
-        font-family: 'roboto', sans-serif;
-        font-size: 54px;
-        text-transform: uppercase;
-        font-weight: bold;
-        position: absolute;
-        z-index: 1009;
-    }
-
-    .galeriaTitulo {
-        grid-area: area2;
-    }
-
-    #familia {
-        grid-area: area3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-height: 400px;
-        overflow: hidden;
-        background-color: black;
-    }
-
-    #bodas {
-        grid-area: area4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-height: 400px;
-        overflow: hidden;
-        /* background-image: radial-gradient(#666666, #000000); */
-        background-color: black;
-    }
-
-    #estudio {
-        grid-area: area5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-height: 400px;
-        overflow: hidden;
-        background-color: black;
-    }
-
-    #nosotros {
-        grid-area: area6;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-height: 400px;
-        overflow: hidden;
-        background-color: black;
-    }
-
-    #servicios {
-        grid-area: area7;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-height: 400px;
-        overflow: hidden;
-        background-color: black;
-    }
-
-    #contactos {
-        grid-area: area8;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-height: 400px;
-        overflow: hidden;
-        background-color: black;
-    }
-
-
-    /* //////////// NOSOTROS ///////////// */
-    .gridNosotros {
-        max-width: 900px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "area1  area1 area1"
-            "area2 area2 area2"
-            "area4 area4 area4"
-    }
-
-    #nosotrosTitulo {
-        grid-area: area1;
-    }
-
-    #containerNosotros {
-        grid-area: area2;
-    }
-
-    #flexNosotros {
-        max-width: 1080px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-
-    }
-
-    /* ////////////// SERVICIOS ///////////// */
-
-    #servicioFamilias {
-        grid-area: area2;
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 20px;
-    }
-
-    #servicioBodas {
-        grid-area: area3;
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 20px;
-    }
-
-    #servicioEstudio {
-        grid-area: area4;
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 20px;
-    }
-
-
 }

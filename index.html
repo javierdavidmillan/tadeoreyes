@@ -24,60 +24,25 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
 
 <body>
     <div id="index"></div>
-    <header>
+    <header class="header">
         <!-- MENU START -->
         <!-- BOOTSTRAP MENU START -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="style/images/logo-light.png" alt="" class="logoHeader"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- <div class="collapse navbar-collapse" id="navbarText"> -->
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#index">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#galeria">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#nosotros">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#servicios">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gridContactos">Contacto</a>
-                    </li>
-                    
-              <span>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link social" href="https://vimeo.com/user43273357" target="_blank"><i
-                                class="fab fa-vimeo "></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link social" href="https://www.instagram.com/memories.photo.stories/"
-                            target="_blank"><i class="fab fa-instagram"></i></a>
-                    </li>
-                </ul>              </span>
-            </div>
-          </nav>
-        <!-- <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#"><img src="style/images/logo-light.png" alt="" class="logoHeader"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- <div class="collapse navbar-collapse" id="navbarText"> -->
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#index">Inicio</a>
@@ -94,49 +59,44 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#gridContactos">Contacto</a>
                         </li>
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link social" href="https://vimeo.com/user43273357" target="_blank"><i
-                                        class="fab fa-vimeo "></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link social" href="https://www.instagram.com/memories.photo.stories/"
-                                    target="_blank"><i class="fab fa-instagram"></i></a>
-                            </li>
-                        </ul>
-                        <div class="collapse navbar-collapse" id="navbarText">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+
+                        <span>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link social" href="https://vimeo.com/user43273357" target="_blank"><i
+                                            class="fab fa-vimeo "></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Pricing</a>
+                                    <a class="nav-link social" href="https://www.instagram.com/trfilmmaker/"
+                                        target="_blank"><i class="fab fa-instagram"></i></a>
                                 </li>
                             </ul>
-                            <span class="navbar-text">
-                                Navbar text with an inline element
-                            </span>
-                        </div>
+                        </span>
                 </div>
-            </nav> -->
+            </nav>
+
         </div>
-        <!-- MENU END -->
     </header>
+    <!-- MENU END -->
     <!-- MAIN START -->
     <main>
         <div class="grid">
-            <!-- SLIDER START -->
-            <div id="slider">
-
+            <!-- SLIDER DESK -->
+            <div class="slider sliderDesktop">
                 <!-- <h2 id="tituloSlider" class="animate__animated animate__fadeInUp">Video profesional</h2> -->
-
                 <!-- VIDEO SLIDER -->
                 <video src="style/video/slider.mp4" autoplay loop muted id="videoSlider">
                 </video>
             </div>
+            <!-- SLIDER MOBILE -->
+            <div class="slider sliderMobile">
+                <!-- <h2 id="tituloSlider" class="animate__animated animate__fadeInUp">Video profesional</h2> -->
+                <!-- VIDEO SLIDER -->
+                <video src="style/video/slider2.mp4" autoplay loop muted id="videoSlider">
+                </video>
+            </div>
+
+
             <!--GALLERIA START -->
             <div class="containerTitulo" id="galeriaTitulo" data-aos="fade-up" data-aos-duration="1000"
                 data-aos-delay="100">
@@ -175,27 +135,77 @@
                 <iframe src="https://player.vimeo.com/video/662731006?h=3a58fbe36e&title=0&byline=0&portrait=0"
                     width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
                     allowfullscreen></iframe> </div>
+        </div>
 
-            <!--             
+        <!--NOSOTROS START -->
+        <div id="nosotros">
+            <div class="containerTitulo" id="galeriaTitulo" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="100">
+                <h1 class="titulosH2">Especialistas</h1>
+                <h2 class="titulosH1">Productor y Director Artístico</h2>
+            </div>
+            <div id="containerNosotros" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="container">
+                    <div class="flexNosotros">
+                        <div class="boxNosotros">
+                            <img src="style/images/gallery/nosotros2.jpg" alt="" class="galeria">
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="parrafoNosotros">Contamos con más de 10 años de experiencia en el rubro
+                                    ofreciendo servicios de producción de video en Buenos Aires para todo tipo de
+                                    clientes.
+                                </li>
+                                <li class="parrafoNosotros">
+                                    Nuestro compromiso está con el nivel de calidad de nuestros productos finales
+                                    manteniendo costos competitivos.
+                                </li>
+                                <li class="parrafoNosotros">
+                                    En la era actual, basados en el consumo de internet creemos que los videos son una
+                                    pieza
+                                    clave del marketing digital.</li>
+                                <li class="parrafoNosotros">
+                                    Es por ello que ofrecemos a nuestros clientes un contenido
+                                    de calidad para diferentes formatos que se adapten a sus necesidades y a los
+                                    lenguajes
+                                    de cada medio.
+                                </li>
 
-            <div id="nosotros" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                <a href="nosotros.html" class="link">
-                    <h3 class="galeriaTitulos">Nosotros</h3>
-                    <img class="galeria blend" src="style/images/gallery/nosotros.jpg" alt="">
-                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="servicios" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                <a href="servicios.html" class="link">
-                    <h3 class="galeriaTitulos">Servicios</h3>
-                    <img class="galeria blend" src="style/images/gallery/servicios.jpg" alt="">
-                </a>
+        </div>
+
+        <!-- SERVICIOS -->
+        <div id="servicios">
+            <div id="gridServicios" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="containerTitulo" id="tituloServicios">
+                    <h1 class="titulosH2">Nuestros Servicios</h1>
+                    <h2 class="titulosH1">Un camino único en la fotografía</h2>
+                </div>
+                <div id="servicioFamilias" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div>
+                        <h2 class="titulosH2">
+                            CINE Y RELEVAMIENTOS PUBLICITARIOS </h2>
+                            <p class="serviciosParrafo"> Ofrecemos videos de calidad y acordes a cada formato. Entendemos la
+                                necesidad de adaptación a las diferentes plataformas y a sus lenguajes. </p>
+                        <ul class="serviciosLista">
+                            <li>- Institucionales </li>
+                            <li>- Relevamientos</li>
+                            <li> - Streaming</li>
+                            <li>- Redes</li>
+                            <li> - Videoclips </li>
+                            <li>- Moda</li>
+                        </ul>
+                  
+                    </div>
+                    <div class="servicios">
+                        <img src="style/images/gallery/nosotros.jpg" alt="" class="galeria">
+                    </div>
+                </div>
             </div>
-            <div id="contactos" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                <a href="contacto.html" class="link">
-                    <h3 class="galeriaTitulos">Contacto</h3>
-                    <img class="galeria blend" src="style/images/gallery/contacto.jpg" alt="">
-                </a>
-            </div> -->
         </div>
 
         <!-- CONTACTO -->
@@ -282,7 +292,7 @@
                         <a href="https://vimeo.com/user43273357" target="_blank">Vimeo</a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/memories.photo.stories/" target="_blank">Instagram</a>
+                        <a href="https://www.instagram.com/trfilmmaker/" target="_blank">Instagram</a>
                     </li>
                 </ul>
             </div>
@@ -322,12 +332,12 @@
     <script>
         AOS.init();
     </script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
