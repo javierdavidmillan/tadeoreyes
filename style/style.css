@@ -128,12 +128,12 @@ nav ul li a {
 
 /* /////////////// SLIDER ///////////////*/
 .sliderDesktop{
-    /* display: block !important; */
+    display: block !important;
     visibility:visible !important;
     opacity: 1;
   }
   .sliderMobile{
-    /* display: none !important; */
+    display: none !important;
     visibility: hidden !important;
     opacity: 0;
   }
@@ -434,12 +434,12 @@ footer {
 /* ///////////////// SERVICIOS ////////////////// */
 
 .servicios {
-    max-width: 400px;
+    max-width: 600px;
     display: flex;
 }
 
 #gridServicios {
-    max-width: 900px;
+    /* max-width: 900px; */
     width: 100%;
     margin-left: auto;
     margin-right: auto;
