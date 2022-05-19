@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- ANIMACION SCROLL -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- SWEET ALERT -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -60,30 +62,13 @@
                         </li>
                     </ul>
 
-                        <!-- <div class="navbar-nav"> -->
-                        <div class="nav-item">
-                            <a class="nav-link social" href="https://vimeo.com/user43273357" target="_blank"><i
-                                    class="fab fa-vimeo "></i></a>
-                            <a class="nav-link social" href="https://www.instagram.com/trfilmmaker/" target="_blank"><i
-                                    class="fab fa-instagram"></i></a>
-                        </div>
-                        <!-- <div class="nav-item">
-                                <a class="nav-link social" href="https://www.instagram.com/trfilmmaker/"
-                                    target="_blank"><i class="fab fa-instagram"></i></a>
-                            </div> -->
-                        <!-- </div> -->
-                        <!-- <span> -->
-                            <!-- <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link social" href="https://vimeo.com/user43273357" target="_blank"><i
-                                            class="fab fa-vimeo "></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link social" href="https://www.instagram.com/trfilmmaker/"
-                                        target="_blank"><i class="fab fa-instagram"></i></a>
-                                </li>
-                            </ul> -->
-                        <!-- </span> -->
+                    <!-- <div class="navbar-nav"> -->
+                    <div class="nav-item">
+                        <a class="nav-link social" href="https://vimeo.com/user43273357" target="_blank"><i
+                                class="fab fa-vimeo "></i></a>
+                        <a class="nav-link social" href="https://www.instagram.com/trfilmmaker/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -115,32 +100,32 @@
             <!-- GALERIA -->
             <div id="video1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <a href="#videoVimeo1" class="link">
-                    <img class="galeria blend" src="style/images/gallery/reelShot.png" alt="">
+                    <img class="galeria blend" src="style/images/gallery/reelShot1.jpg" alt="">
                 </a>
             </div>
             <div id="video2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <a href="#videoVimeo2" class="link">
-                    <img class="galeria blend" src="style/images/gallery/reelShot.png" alt="">
+                    <img class="galeria blend" src="style/images/gallery/reelShot2.jpg" alt="">
                 </a>
             </div>
             <div id="video3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <a href="#videoVimeo3" class="link">
-                    <img class="galeria blend" src="style/images/gallery/reelShot.png" alt="">
+                    <img class="galeria blend" src="style/images/gallery/reelShot3.jpg" alt="">
                 </a>
             </div>
             <div id="video4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <a href="#videoVimeo4" class="link">
-                    <img class="galeria blend" src="style/images/gallery/reelShot.png" alt="">
+                    <img class="galeria blend" src="style/images/gallery/reelShot4.jpg" alt="">
                 </a>
             </div>
             <div id="video5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <a href="#videoVimeo5" class="link">
-                    <img class="galeria blend" src="style/images/gallery/reelShot.png" alt="">
+                    <img class="galeria blend" src="style/images/gallery/reelShot5.jpg" alt="">
                 </a>
             </div>
             <div id="video6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <a href="#videoVimeo6" class="link">
-                    <img class="galeria blend" src="style/images/gallery/reelShot.png" alt="">
+                    <img class="galeria blend" src="style/images/gallery/reelShot6.jpg" alt="">
                 </a>
             </div>
         </div>
@@ -224,8 +209,8 @@
         <div id="gridNosotros">
             <div class="containerTitulo" id="nosotrosTitulo" data-aos="fade-up" data-aos-duration="1000"
                 data-aos-delay="100">
-                <h1 class="titulosH2">Especialistas</h1>
-                <h2 class="titulosH1">Productor y Director Artístico</h2>
+                <h1 class="titulosH2">TRFILMMAKER TEAM</h1>
+                <h2 class="titulosH1">Quiénes somos</h2>
             </div>
             <div id="containerNosotros" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <div class="container">
@@ -235,6 +220,10 @@
                         </div>
                         <div>
                             <ul>
+                                <li class="parrafoNosotros">
+                                    Somos especialistas en la producción audiovisual con Tadeo Reyes como Productor y
+                                    Director Artístico y Carolina Durán Cabaleiro como Productora General.
+                                </li>
                                 <li class="parrafoNosotros">Contamos con más de 10 años de experiencia en el rubro
                                     ofreciendo servicios de producción de video en Buenos Aires para todo tipo de
                                     clientes.
@@ -268,22 +257,25 @@
                 <h2 class="titulosH1">Un camino único en el video</h2>
             </div>
             <div id="servicioCine" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                <div id="servicioCineMobile" class="flexServicios">
-                    <h2 class="titulosH2">
+                <div class="servicioCineMobile flexServicios " >
+                    <h2 class="tituloServicios">
                         CINE Y RELEVAMIENTOS PUBLICITARIOS </h2>
                     <p class="serviciosParrafo"> Ofrecemos videos de calidad y acordes a cada formato.
                         Entendemos la
                         necesidad de adaptación a las diferentes plataformas y a sus lenguajes. </p>
                     <ul class="serviciosLista">
-                        <li>- Institucionales </li>
-                        <li>- Relevamientos</li>
-                        <li> - Streaming</li>
-                        <li>- Redes</li>
-                        <li> - Videoclips </li>
-                        <li>- Moda</li>
+                        <li><i class="fas fa-university"></i>Institucionales </li>
+                        <li><i class="fas fa-video"></i>
+                           
+                            Relevamientos
+                           </li>
+                        <li><i class="fas fa-stream"></i>Streaming</li>
+                        <li><i class="fas fa-hashtag"></i>Redes</li>
+                        <li><i class="fas fa-file-video"></i>Videoclips </li>
+                        <li> <i class="fas fa-tshirt"></i>Moda</li>
                     </ul>
                 </div>
-                <div id="servicioCineMobilePhoto" class="servicios">
+                <div class="servicios">
                     <img src="style/images/gallery/nosotros.jpg" alt="" class="galeria">
                 </div>
             </div>
@@ -309,28 +301,27 @@
                     <h3 class="h3Contacto"><i class="fas fa-map-marker-alt"></i> Ubicación</h3>
                     <p>Argentina, Buenos Aires</p>
                 </div>
-
-
             </div>
             <!--FORMULARIO DE CONTACTO -->
+            <!-- <div id="error"></div> -->
             <div id="formulario" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                <form action="">
+                <form id="form" action="/" method="GET">
                     <fieldset>
                         <div class="form">
-                            <input type="text" placeholder="Tú Nombre">
+                            <input id="nombre" name="nombre" type="text" placeholder="Tú Nombre">
                         </div>
                         <div class="form">
-                            <input type="email" name="" id="" placeholder="Tú email">
+                            <input name="email" type="email" name="" id="email" placeholder="Tú email">
                         </div>
                         <div class="form">
-                            <input type="number" name="" id="" placeholder="Tú Número de telefono">
+                            <input type="number" name="numero" id="numero" placeholder="Tú Número de telefono">
                         </div>
                         <div class="form">
-                            <input type="text" placeholder="Asunto">
+                            <input name="asunto" id="asunto" type="text" placeholder="Asunto">
 
                         </div>
                         <div class="form">
-                            <textarea name="" id="" cols="" rows=""
+                            <textarea name="texto" id="texto" cols="" rows=""
                                 placeholder="Contanos la idea, nosotros la realizamos."></textarea>
                         </div>
                         <div class="form">
@@ -413,6 +404,7 @@
         <!-- </div> -->
     </footer>
     <!-- JS -->
+    <script src="validacion.js"></script>
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/38d739702e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
